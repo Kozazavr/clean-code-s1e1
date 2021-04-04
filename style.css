@@ -27,7 +27,7 @@ body {
   }
 
 }
-.centered-main-page-element {
+.page__content {
   display: block;
   width: 500px;
   margin: 0 auto 0;
