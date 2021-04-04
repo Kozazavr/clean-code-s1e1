@@ -1,4 +1,4 @@
-/* Basic Style */
+/*Basic Style*/
 body {
   background-color: #f8f8f8;
   color: #333;
@@ -49,7 +49,8 @@ ul {
 }
 
 li, 
-h3 {
+h2,
+h1 {
   list-style: none;
 }
 
@@ -112,7 +113,7 @@ input#new-task {
   width: 318px;
 }
 
-p > button:hover {
+button:hover {
   color: #0fC57c;
 }
 
@@ -170,11 +171,11 @@ ul li input[type=text] {
   display: none;
 }
 
-ul li.editMode input[type=text] {
+ul li.form-todo__edit input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editMode label {
+ul li.form-todo__edit label {
   display: none;
 }
