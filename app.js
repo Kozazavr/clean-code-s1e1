@@ -15,7 +15,7 @@ var completedTasksHolder=document.getElementById("completed-tasks");//completed-
 
 
 //New task list item
-var createNewTaskElement=function(taskString){
+var createNewTaskElement = function(taskString) {
 
   var listItem=document.createElement("li");
 
@@ -59,7 +59,7 @@ var createNewTaskElement=function(taskString){
 
 
 
-var addTask=function(){
+var addTask = function() {
   console.log("Add Task...");
   //Create a new list item with the text from the #new-task:
   if (!taskInput.value) return;
@@ -75,7 +75,7 @@ var addTask=function(){
 
 //Edit an existing task.
 
-var editTask=function(){
+var editTask = function() {
   console.log("Edit Task...");
   console.log("Change 'edit' to 'save'");
 
@@ -87,16 +87,16 @@ var editTask=function(){
   var editBtn=listItem.querySelector(".edit");
   var containsClass=listItem.classList.contains("editMode");
   //If class of the parent is .editmode
-  if(containsClass){
+  if (containsClass) {
 
     //switch to .editmode
     //label becomes the inputs value.
     label.innerText=editInput.value;
      editBtn.innerText="Edit";
-  }else{
+  } else {
      editInput.value=label.innerText;
      editBtn.innerText="Save";
-    }
+  }
 
   //toggle .editmode on the parent.
   listItem.classList.toggle("editMode");
@@ -104,7 +104,7 @@ var editTask=function(){
 
 
 //Delete task.
-var deleteTask=function(){
+var deleteTask = function() {
   console.log("Delete Task...");
   var listItem=this.parentNode;
   var ul=listItem.parentNode;
@@ -115,7 +115,7 @@ var deleteTask=function(){
 
 
 //Mark task completed
-var taskCompleted=function(){
+var taskCompleted = function() {
   console.log("Complete Task...");
 
   //Append the task list item to the #completed-tasks
