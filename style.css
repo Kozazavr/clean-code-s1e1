@@ -1,5 +1,5 @@
 /*Basic Style*/
-body {
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -20,7 +20,7 @@ body {
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
   .header__todo { 
     text-align: center;
@@ -43,23 +43,21 @@ body {
   display: flex;
 }
 
-ul {
+.list {
   margin: 0;
   padding: 0px;
 }
 
-li, 
-h2,
-h1 {
-  list-style: none;
-}
-
-input,
-button {
+.task,
+.edit,
+.delete,
+.add__button {
   outline: none;
 }
 
-button {
+.edit,
+.delete,
+.add__button {
   background: none;
   border: 0px;
   color: #888;
@@ -69,13 +67,12 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.edit:hover {
   color: #3a3a3a;
 }
 
 /* Heading */
-h2,
-h1,
+.title,
 label[for="new-task"] {
   color: #333;
   font-weight: 700;
@@ -109,11 +106,11 @@ label[for="new-task"] {
   margin: 0 0 20px;
 }
 
-input#new-task {
+#new-task {
   width: 318px;
 }
 
-button:hover {
+.add__button:hover {
   color: #0fC57c;
 }
 
